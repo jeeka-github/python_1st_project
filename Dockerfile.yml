@@ -1,0 +1,7 @@
+FROM python:3.8-slim
+
+COPY hello.py /usr/src/app/hello.py
+
+WORKDIR /usr/src/app
+
+ENTRYPOINT [ "python", "/usr/src/app/hello.py" ]
